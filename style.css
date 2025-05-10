@@ -1,18 +1,21 @@
-:root {
-    --size: 16; /*  default value for the size */
-}
+
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('images/background-image.avif');
 }
   
 
 .size-button {
     display: block;
+    font-size: 20px;
     margin: 10px auto;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
 }
 
 .container {
@@ -20,6 +23,7 @@ body {
     flex-wrap: wrap;
     width: 800px;
     height: 800px;
+    --size: 16; /*  default value for the size */
   
 }
 
@@ -27,9 +31,6 @@ body {
     box-sizing: border-box;
     width: calc(800px/var(--size));
     height: calc(800px/var(--size));
-    border: 1px solid black; 
+    border: 1px solid rgb(26, 22, 14); 
 }
 
-.items:hover{
-    background-color: aqua;
-}
